@@ -1,0 +1,134 @@
+body,html {
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	background-color: black;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+	color: white;
+	outline: none;
+}
+
+.navbar-custom {
+	border: none;
+	background:none;
+	padding: 25px 0;
+}
+
+.navbar-custom .navbar-name{
+	font-weight:100;
+	font-size: 20px;
+}
+
+
+.navbar-custom .navbar-nav li {
+	font-size: 16px;
+}
+
+.navbar-custom .navbar-nav li a:hover {
+	color: #51A6F6;
+	outline: none;
+}
+
+@media (min-width: 768px) {
+	.navbar-custom .navbar-brand {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+
+/* header */
+header {
+	text-align: center;
+	background-size: cover;
+
+}
+
+
+header .name {
+	font-size: 40px;
+	padding-top:30vh;
+	padding-bottom: 15px;
+}
+header .intro-text {
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.floating:hover,
+.floating:focus,
+.floating:active{
+	color: #51A6F6; 
+}
+
+/* animation for double down arrow */
+
+.floating{
+	/* safari, firefox, chrome, opera */
+	animation-name: floating;
+	-webkit-animation-name: floating;
+	animation-duration: 0.7s;
+	-webkit-animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%); }
+  50% {
+    transform: translateY(5px) scale(1.15); }
+  100% {
+    transform: translateY(0%); } }
+	
+/* for chrome and safari */
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%); }
+  50% {
+    -webkit-transform: translateY(5px) scale(1.15); }
+  100% {
+    -webkit-transform: translateY(0%); } }
+	
+
+/* adjustment for mobile devices */
+@media (min-width: 768px) {
+	header .name {
+		font-size: 32px;
+	}
+	header .typed {
+		font-size: 24px;
+	}
+	header .scroll-down{
+		font-size: 40px;
+	}
+}
+.social{
+/*	background: rgba(173, 173, 173, 0.2);*/
+	border:none;
+	bottom:0;
+	left: -100px;
+	right:-25px;
+	margin:0px;
+	padding:0px;
+}
+
+.social li{
+	display:inline-block;
+	padding: 25px 5px 25px 0px;
+}
+
+.social li a i{
+	font-size: 24px;
+}
+
+.social li a i:hover {
+	color: #51A6F6; 
+}
+		
